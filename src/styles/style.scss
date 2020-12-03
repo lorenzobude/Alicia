@@ -1,0 +1,228 @@
+// variables
+// -------------------------------------------------------------------------
+
+$fontPrimary: 'Nunito', sans-serif;
+$lineHeight: 1.3;
+
+$color0: #343A40;
+$color1: #957ACA;
+$color2: #1FA7DA;
+$color3: #73BFA6;
+$color4: #FD7062;
+$color5: #4A148C;
+$color6: #1A237E;
+$colorGray: #DEE2E6;
+$colorLight: #F8F9FA;
+$colorDark: #6C757D;
+
+$breakXsMax: 424.98px;
+$breakXs: 425px;
+$breakSmMax: 575.98px;
+$breakSm: 576px;
+$breakMdMax: 767.98px;
+$breakMd: 768px;
+$breakLgMax: 991.98px;
+$breakLg: 992px;
+$breakXlMax: 1199.98px;
+$breakXl: 1200px;
+
+
+// mixins & placeholders
+// -------------------------------------------------------------------------
+
+@mixin card($padding, $paddingLarge) {
+    border-radius: .5rem; background: white; overflow: hidden;
+    .card-body {
+        padding: $padding;
+        @media (min-width: $breakLg) {padding: $paddingLarge}
+    }
+}
+
+@mixin smallTitle($color) {text-transform: uppercase; color: $color; font-weight: bold; margin: 0 0 1em; font-weight: 800;}
+
+%listReset {padding: 0; margin: 0; list-style: none;}
+
+%imgFitCover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+
+%hoverTransformScale {
+    transition: transform 0.1s;
+    &:hover {transform: scale(1.05); cursor: pointer;}
+}
+
+
+// generic
+// -------------------------------------------------------------------------
+
+::-moz-selection {background: $color3; color: white;}
+::selection {background: $color3; color: white;}
+
+body {font-family: $fontPrimary; color: $color0; line-height: $lineHeight; background: $colorLight;}
+
+a {
+    color: $color4;
+    &:hover {text-decoration: none;}
+}
+
+figure {margin: 0;}
+img {max-width: 100%;}
+
+h1 {font-size: calc(1.375rem + 1.5vw); margin-top: 0; font-weight: 800; color: $color5;}
+h2 {font-size: calc(1.325rem + .9vw); color: $colorDark;}
+h3 {font-size: calc(1.3rem + .6vw);}
+h4 {font-size: calc(1.275rem + .3vw);}
+h5 {font-size: 1rem;}
+h6 {font-size: .8rem;}
+
+@media (min-width: $breakLg) {
+    h1 {font-size: 2.25rem;}
+    h2 {font-size: 1.75rem;}
+    h3 {font-size: 1.5rem;}
+    h4 {font-size: 1.25rem;}
+}
+
+
+// shared
+// -------------------------------------------------------------------------
+
+.container {
+    padding: 0 1rem;
+    @media (min-width: $breakXl) {width: 1170px; padding: 0; margin: 0 auto;}
+}
+
+.card {@include card(1.5rem, 1.5rem);}
+.small-title {@include smallTitle($color5);}
+.read-all {@include smallTitle($color4);}
+
+p.lead {font-size: 1.3rem; font-weight: bold;}
+
+.violet {
+    h1, .small-title {color: $color1;}
+    &.nav-link:hover {color: $color1;}
+    .teaser-img:hover {border-bottom-color: $color1 !important;}
+}
+
+.blue {
+    h1, .small-title {color: $color2;}
+    &.nav-link:hover {color: $color2;}
+    .teaser-img:hover {border-bottom-color: $color2 !important;}
+}
+
+.green {
+    h1, .small-title {color: $color3;}
+    &.nav-link:hover {color: $color3;}
+    .teaser-img:hover {border-bottom-color: $color3 !important;}
+}
+
+form {margin-top: 2em;}
+.form-control {display: block; width: 100%; padding: .375rem .75rem; border: 1px solid $colorGray; border-radius: .25rem; margin-bottom: 1em; box-sizing: border-box;}
+
+button {border: 0;}
+.btn {display: inline-block; padding: .75em 1em; border-radius: .25em; text-transform: uppercase; font-weight: bold; text-decoration: none; @extend %hoverTransformScale;}
+.btn-primary {background: $color4; color: white !important;}
+.btn-secondary {background: $color2; color: white !important;}
+
+// layout
+// -------------------------------------------------------------------------
+
+.site-header {
+    padding: 1rem 0; position: relative;
+    background-image: linear-gradient(180deg, transparent 0, $color5 0); background-position: 0 -5rem; background-repeat: no-repeat;
+    @media (min-width: $breakLg) {padding: 2rem 0;}
+
+    .container .card-body {display: flex; justify-content: space-between; align-items: center;}
+}
+
+.site-logo img {
+    height: 1.5rem;
+    @media (min-width: $breakXs) {height: 2.5rem;}
+    @media (min-width: $breakXl) {height: 3.5rem;}
+}
+
+.site-navigation {
+    display: flex; align-items: center;
+
+    button {
+        padding: 0; background: transparent;
+        @media (min-width: $breakXl) {display: none;}
+        img {width: 30px;}
+    }
+
+    nav {
+        display: none; z-index: 1; position: absolute; top: 80%; right: 1rem; background: white; padding: 1em 0; border: 1px solid $colorGray; border-radius: .5rem;
+        @media (min-width: $breakXl) {display: block !important; position: static; border: 0;}
+        
+        ul {
+            @extend %listReset;
+            @media (min-width: $breakXl) {display: flex; align-items: center;}
+    
+            a {
+                display: inline-block; padding: .5em 2em; text-transform: uppercase; text-decoration: none; font-weight: 800; color: $color0;
+                @media (min-width: $breakXl) {padding: .5em 1em;}
+            }
+        }
+    }
+
+    .btn {
+        margin-left: 2rem;
+        @media (max-width: $breakSm) {padding: 0; background: none; font-size: 1.5rem; margin-left: 1rem;}
+
+        span + span {
+            display: none;
+            @media (min-width: $breakSm) {display: inline-block;}
+        }
+    }
+}
+
+.main-container {
+    @media (min-width: $breakMd) {display: flex; flex-direction: row-reverse; justify-content: space-between;}
+}
+
+.site-slideshow {
+    @include card(0, 0); margin-bottom: 1rem;
+    @media (min-width: $breakLg) {margin-bottom: 2rem;}
+    
+    figure {
+        position: relative; padding-top: 80%;
+        @media (min-width: $breakMd) {padding-top: 40%;}
+
+        img {@extend %imgFitCover;}
+        figcaption {
+            position: absolute; bottom: 0; left: 0; width: 100%; padding: 1em; background: rgba(white, .7); font-size: 1.2rem; box-sizing: border-box;
+            @media (min-width: $breakLg) {top: 1.5rem; right: 1.5rem; bottom: auto; left: auto; width: 50%; border-radius: .25rem;}
+        }
+    }
+}
+
+main {@include card(1.5rem, 2rem);}
+
+.site-services {
+    @media (min-width: $breakLg) {display: flex; justify-content: space-between;}
+
+    .service {
+        margin-top: 2em;
+        @media (min-width: $breakLg) {margin-top: 0; flex: 0 0 31.5%;}
+
+        .teaser-img {display: block; margin-bottom: 1em; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: transparent;}
+    }
+}
+
+.site-aside {
+    margin-top: 1rem;
+    @media (min-width: $breakMd) {flex: 0 0 30%; margin: 0 1rem 0 0;}
+    @media (min-width: $breakLg) {flex: 0 0 25%; margin: 0 2rem 0 0;}
+    
+    .card:not(:first-child) {
+        margin-top: 1rem;
+        @media (min-width: $breakLg) {margin-top: 2rem;}
+    }
+
+    .book {
+        display: block; @extend %hoverTransformScale;
+        img {width: 100%;}
+    }
+}
+
+.site-footer {
+    margin-top: 1rem; background: $color6; color: white; font-size: .8rem; text-align: right; padding: 1.5rem 0;
+    @media (min-width: $breakLg) {margin-top: 2rem;}
+}
