@@ -14,8 +14,7 @@ export default function Home({data}) {
 
       <main>
         <div className="card-body">
-          <h1>Sei in un periodo di crisi nella tua vita? <span>😪</span></h1>
-            
+          <h1>Sei in un periodo di crisi nella tua vita? <span>😪</span></h1>            
           <p>
             I cambiamenti e le situazioni transitorie infondono insicurezza perchè ci fanno muovere in terre scnosciute. <strong>Paura, ansia, stress psico-fisico e smarrimento</strong> fanno capolino.
             A volte con una certa insistenza anche notturna.
@@ -36,7 +35,6 @@ export default function Home({data}) {
           <p>
             Abbiamo soltanto bisogno di una mano esperta per trovare il bandolo della matassa e far ripartire tutto il sistema.
           </p>
-
           <p class="lead">Ecco in cosa posso aiutarti:</p>
 
           <div className="site-services">

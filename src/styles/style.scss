@@ -61,6 +61,7 @@ body {font-family: $fontPrimary; color: $color0; line-height: $lineHeight; backg
 a {
     color: $color4;
     &:hover {text-decoration: none;}
+    // &:not(.site-logo):focus {background: #FD0; color: black !important; text-decoration: none;}
 }
 
 figure {margin: 0;}
@@ -120,6 +121,7 @@ button {border: 0;}
 .btn {display: inline-block; padding: .75em 1em; border-radius: .25em; text-transform: uppercase; font-weight: bold; text-decoration: none; @extend %hoverTransformScale;}
 .btn-primary {background: $color4; color: white !important;}
 .btn-secondary {background: $color2; color: white !important;}
+.btn .icon {display: none;}
 
 // layout
 // -------------------------------------------------------------------------
@@ -166,7 +168,11 @@ button {border: 0;}
         margin-left: 2rem;
         @media (max-width: $breakSm) {padding: 0; background: none; font-size: 1.5rem; margin-left: 1rem;}
 
-        span + span {
+        .icon {
+            @media (max-width: $breakSmMax) {display: block;}
+        }
+
+        .text {
             display: none;
             @media (min-width: $breakSm) {display: inline-block;}
         }
@@ -177,8 +183,10 @@ button {border: 0;}
     @media (min-width: $breakMd) {display: flex; flex-direction: row-reverse; justify-content: space-between;}
 }
 
+.page {width: 100%;}
+
 .site-slideshow {
-    @include card(0, 0); margin-bottom: 1rem;
+    @include card(0, 0); margin-bottom: 1rem; background: white;
     @media (min-width: $breakLg) {margin-bottom: 2rem;}
     
     figure {
@@ -223,6 +231,7 @@ main {@include card(1.5rem, 2rem);}
 }
 
 .site-footer {
-    margin-top: 1rem; background: $color6; color: white; font-size: .8rem; text-align: right; padding: 1.5rem 0;
+    margin-top: 1rem; background: $color6; color: white; font-size: .8rem; padding: 1.5rem 0;
+    @media (min-width: $breakMd) {text-align: right;}
     @media (min-width: $breakLg) {margin-top: 2rem;}
 }

@@ -8,7 +8,7 @@ export default function CallToAction(props) {
 
   return (
     <Link to="/contatti" className={`btn btn-${props.style}`} style={style}>
-      <span>✉️</span> <span>Contattami</span>
+      <span className="icon">✉️</span> <span className="text">Contattami</span>
     </Link>
   )
 }

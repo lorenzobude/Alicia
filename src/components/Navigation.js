@@ -40,7 +40,7 @@ export default function Navigation() {
         <ul>
           {data.allMarkdownRemark.edges.map(({node}) => (
             <li key={node.id}>
-              <Link to={node.fields.slug} className={`nav-link ${node.frontmatter.color}`}>
+              <Link to={node.fields.slug} className={`nav-link ${node.frontmatter.color}`} onClick={() => setShowNavigation(!showNavigation)}>
                 {node.frontmatter.navCaption}
               </Link>
             </li>

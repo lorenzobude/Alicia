@@ -3,7 +3,7 @@ type: Page
 title: Chi sono
 ---
 
-Sono Licia Atzori, **life coach** (secondo il metodo Resonance) e **reikista** (secondo la scuola di Mikao Usui). Nasco come **insegnante di scuola dell'infanzia** (secondo il metodo comunale bolognese e poi statale italiano) nella quale opero da vent'anni.
+Sono Licia Atzori, **Life Coach** (secondo il metodo Resonance) e **Reikista** (secondo la scuola di Mikao Usui). Nasco come **insegnante di scuola dell'infanzia** (secondo il metodo comunale bolognese e poi statale italiano) nella quale opero da vent'anni.
 
 Mi hanno sempre affascinata le **tecniche naturali** e la **filosofia orientale** che collega gli squilibri fisici agli stati emotivi ed ai pensieri della persona. Corpo-mente-emozioni sono facce di una stessa unità. Per questa ragione ho elaborato la mia tecnica di **coaching integrato**. Mi occupo del pensiero, dell'energia e dello stato emotivo con un linguaggio specifico.
 
