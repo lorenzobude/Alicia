@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="container">
-        &copy; {data.site.siteMetadata.title} – {data.site.siteMetadata.description}. Tutti i diritti sono riservati.
+        &copy; {data.site.siteMetadata.title} – {data.site.siteMetadata.description}. Tutti i diritti sono riservati. <a href="mailto:lorenzobude@gmail.com">Credits</a>
       </div>
     </footer>
   )

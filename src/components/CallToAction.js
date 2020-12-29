@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import imgLogo from "../images/envelope.svg"
+
 export default function CallToAction(props) {
   const style = {
     marginTop: props.hasMarginTop && "1em"
@@ -8,7 +10,7 @@ export default function CallToAction(props) {
 
   return (
     <Link to="/contatti" className={`btn btn-${props.style}`} style={style}>
-      <span className="icon">✉️</span> <span className="text">Contattami</span>
+      <img src={imgLogo} className="icon" alt="Envelope" /> <span className="text">Contattami</span>
     </Link>
   )
 }

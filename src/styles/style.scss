@@ -15,6 +15,8 @@ $colorGray: #DEE2E6;
 $colorLight: #F8F9FA;
 $colorDark: #6C757D;
 
+$breakXxsMax: 374.98px;
+$breakXxs: 375px;
 $breakXsMax: 424.98px;
 $breakXs: 425px;
 $breakSmMax: 575.98px;
@@ -136,6 +138,7 @@ button {border: 0;}
 
 .site-logo img {
     height: 1.5rem;
+    @media (min-width: $breakXxs) {height: 2rem;}
     @media (min-width: $breakXs) {height: 2.5rem;}
     @media (min-width: $breakXl) {height: 3.5rem;}
 }
@@ -169,7 +172,7 @@ button {border: 0;}
         @media (max-width: $breakSm) {padding: 0; background: none; font-size: 1.5rem; margin-left: 1rem;}
 
         .icon {
-            @media (max-width: $breakSmMax) {display: block;}
+            @media (max-width: $breakSmMax) {display: block; width: 30px;}
         }
 
         .text {
@@ -234,4 +237,6 @@ main {@include card(1.5rem, 2rem);}
     margin-top: 1rem; background: $color6; color: white; font-size: .8rem; padding: 1.5rem 0;
     @media (min-width: $breakMd) {text-align: right;}
     @media (min-width: $breakLg) {margin-top: 2rem;}
+
+    a {color: white;}
 }
