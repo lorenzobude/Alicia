@@ -28,19 +28,22 @@ export default function Navigation() {
     }
   `)
   
-  const [showNavigation, setShowNavigation] = useState(false)
-  let cssDisplay = showNavigation ? "block" : "none"
+  const [displayNavigation, setDisplayNavigation] = useState("none")
+  
+  function toggleNavigation() {
+    setDisplayNavigation(prevDisplayNavigation => prevDisplayNavigation == "none" ? "block" : "none")
+  }
 
   return (
     <>
-      <button onClick={() => setShowNavigation(!showNavigation)}>
+      <button onClick={toggleNavigation}>
         <img src={imgBars} alt="Icona menù" />
       </button>
-      <nav style={{display: cssDisplay}}>
+      <nav style={{display: displayNavigation}}>
         <ul>
           {data.allMarkdownRemark.edges.map(({node}) => (
             <li key={node.id}>
-              <Link to={node.fields.slug} className={`nav-link ${node.frontmatter.color}`} onClick={() => setShowNavigation(!showNavigation)}>
+              <Link to={node.fields.slug} className={`nav-link ${node.frontmatter.color}`} onClick={toggleNavigation}>
                 {node.frontmatter.navCaption}
               </Link>
             </li>
