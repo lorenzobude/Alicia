@@ -14,11 +14,9 @@ export default function AboutCard() {
       <div className="card-body">
         <div className="small-title">Chi sono</div>
         <p>
-          Opero a <strong>Bologna</strong> come <strong>Life Coach</strong> (secondo il metodo Resonance) e <strong>Reikista</strong> (secondo la scuola di Mikao Usui).
-          Nasco come insegnante di scuola dell'infanzia nella quale opero da vent'anni.
-          Mi hanno sempre affascinata le <strong>tecniche naturali</strong> e la <strong>filosofia orientale</strong> che collega gli squilibri fisici agli stati emotivi ed ai pensieri della persona.
+          Ciò che amo di più è vedere riaccendersi lo sguardo ed il sorriso nelle persone che si rivolgono a me.
         </p>
-        <Link to="/chi-sono" className="read-all">Maggiori informazioni</Link>
+        <Link to="/chi-sono" className="read-all">Di più su di me</Link>
       </div>
     </div>
   )

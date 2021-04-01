@@ -1,11 +1,11 @@
 ---
 type: Service
-navCaption: Trattamenti Reiki
+navCaption: Reiki
 order: 3
 title: Trattamenti Reiki
 image: ../images/reiki.jpg
 summary: Il Reiki è una tecnica di riequilibrio energetico che canalizza l'energia dell'ambiente attraverso le mani del reikista direttamente al campo energetico del cliente.
-color: green
+color: default
 ---
 
 ## Cos'è il Trattamento Reiki?

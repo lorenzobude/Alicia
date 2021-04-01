@@ -116,6 +116,18 @@ p.lead {font-size: 1.3rem; font-weight: bold;}
     .teaser-img:hover {border-bottom-color: $color3 !important;}
 }
 
+.red {
+    h1, .small-title {color: $color4;}
+    &.nav-link:hover {color: $color4;}
+    .teaser-img:hover {border-bottom-color: $color4 !important;}
+}
+
+.default {
+    h1, .small-title {color: $color5;}
+    &.nav-link:hover {color: $color5;}
+    .teaser-img:hover {border-bottom-color: $color5 !important;}
+}
+
 form {margin-top: 2em;}
 .form-control {display: block; width: 100%; padding: .375rem .75rem; border: 1px solid $colorGray; border-radius: .25rem; margin-bottom: 1em; box-sizing: border-box;}
 
@@ -123,7 +135,10 @@ button {border: 0;}
 .btn {display: inline-block; padding: .75em 1em; border-radius: .25em; text-transform: uppercase; font-weight: bold; text-decoration: none; @extend %hoverTransformScale;}
 .btn-primary {background: $color4; color: white !important;}
 .btn-secondary {background: $color2; color: white !important;}
+.btn-tertiary {background: $color3; color: white !important;}
 .btn .icon {display: none;}
+
+figcaption {border: 1px solid $colorGray; padding: .25rem .5rem; font-size: .8rem; background: $colorLight;}
 
 // layout
 // -------------------------------------------------------------------------
@@ -168,16 +183,12 @@ button {border: 0;}
     }
 
     .btn {
-        margin-left: 2rem;
-        @media (max-width: $breakSm) {padding: 0; background: none; font-size: 1.5rem; margin-left: 1rem;}
-
+        margin-left: 2rem; padding: 0; background: none; font-size: 1.5rem; margin-left: 1rem;
         .icon {
-            @media (max-width: $breakSmMax) {display: block; width: 30px;}
+            display: block; width: 30px;
         }
-
         .text {
             display: none;
-            @media (min-width: $breakSm) {display: inline-block;}
         }
     }
 }
@@ -207,11 +218,12 @@ button {border: 0;}
 main {@include card(1.5rem, 2rem);}
 
 .site-services {
-    @media (min-width: $breakLg) {display: flex; justify-content: space-between;}
+    @media (min-width: $breakSm) {margin-top: 2em; display: grid; grid-gap: 2rem; grid-template-columns: repeat(2, 1fr);}
 
     .service {
         margin-top: 2em;
-        @media (min-width: $breakLg) {margin-top: 0; flex: 0 0 31.5%;}
+        &:first-child {margin-top: 0;}        
+        @media (min-width: $breakSm) {margin-top: 0;}
 
         .teaser-img {display: block; margin-bottom: 1em; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: transparent;}
     }

@@ -5,7 +5,7 @@ order: 1
 title: Sedute di Coaching
 image: ../images/coaching.jpg
 summary: Il coaching è una tecnica che può aumentare le performance personali ad esempio nello sport o nel lavoro, dove si occupa principalmente di obiettivi di risultato oppure nella dimensione relazionale con se stessi o con gli altri.
-color: violet
+color: default
 ---
 
 ## Cos'è un Life Coach

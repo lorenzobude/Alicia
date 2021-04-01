@@ -5,7 +5,7 @@ order: 2
 title: Consulenza Genitoriale
 image: ../images/consulenza-genitoriale.jpg
 summary: La mia esperienza ventennale come insegnante ed appassionata di psicologia applicata offre sostegno ai genitori che si triovano ad affrontare il compito più diffcile spesso senza competenze specifiche e senza aiuti efficaci.
-color: blue
+color: default
 ---
 
 La mia esperienza ventennale come insegnante ed appassionata di psicologia applicata offre sostegno ai genitori che si triovano ad affrontare il compito più diffcile spesso senza competenze specifiche e senza aiuti efficaci. Infatti, i consigli ed i metodi dei nosti genitori sono inefficaci oggi, perchè la società e lo stile di vita di oggi sono totalmente diversi da quelli di vent'anni fa.

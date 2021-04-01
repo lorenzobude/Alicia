@@ -3,10 +3,21 @@ type: Page
 title: Chi sono
 ---
 
-Sono Licia Atzori, **Life Coach** (secondo il metodo Resonance) e **Reikista** (secondo la scuola di Mikao Usui). Nasco come **insegnante di scuola dell'infanzia** (secondo il metodo comunale bolognese e poi statale italiano) nella quale opero da vent'anni.
+Sono Licia, insegnante di scuola dell’infanzia, life coach ed operatrice olistica (riequilibrio psico-fisico attraverso il Reiki e il massaggio energetico).
 
-Mi hanno sempre affascinata le **tecniche naturali** e la **filosofia orientale** che collega gli squilibri fisici agli stati emotivi ed ai pensieri della persona. Corpo-mente-emozioni sono facce di una stessa unità. Per questa ragione ho elaborato la mia tecnica di **coaching integrato**. Mi occupo del pensiero, dell'energia e dello stato emotivo con un linguaggio specifico.
+Ho maturato tali competenze in ambito educativo-didattico da poter offrire consulenze sulla genitorialità e sedute di auto-rieducazione sotto gli aspetti: relazionale, di gestione emotiva, energetico-salutistico, sul mindset, spirituali, professionali.
 
-Sono una persona eclettica e quindi ho seguito davvero tanti corsi riguardanti metodi ed approcci differenti che mi hanno permesso di scoprire sempre di più me stessa ed i miei processi interni.
+Il mio metodo integrato si adatta a persone di tutte le età, a bambini e/o genitori, a coppie, a famiglie, team di lavoro.
+Ciò che amo di più è vedere riaccendersi lo sguardo ed il sorriso nelle persone che si rivolgono a me.
 
-Sono una persona pratica e concreta e quindi mi sono avvicinata al coaching in quanto è una tecnica di autoeducazione del cliente orientata alla risoluzione del problema. Dapprima seguivo un filone di coaching basato sulla PNL e poi ho consociuto la scuola **Resonance** presso la quale mi sono diplomata perchè ne condivido la visione olistica ed il valore dell'essenza unica ed irripetibile di ogni individuo.
+**Questa è la mia mission.**
+
+Aiutare le persone ad individuare uno stile di vita che li renda **felici, realizzati e soddisfatti**.
+
+## Il mio metodo
+
+Il **coaching integrato** è un approccio dialogico che si intreccia a tecniche energetiche come il Reiki, il massaggio energetico, la visualizzazione creativa.
+
+Il suo scopo è di sostenere la persona da tutti i punti di vista mentale, emozionale, energetico-corporeo e spirituale.
+
+In un breve ciclo di sedute il coachee acquista chiarezza, equilibrio emotivo, nuova percezione di sé e dei suoi obiettivi ed anche la forza e la determinazione necessari a raggiungerli per conquistare un miglior stato di benessere.

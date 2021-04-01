@@ -35,7 +35,19 @@ export default function Home({data}) {
           <p>
             Abbiamo soltanto bisogno di una mano esperta per trovare il bandolo della matassa e far ripartire tutto il sistema.
           </p>
-          <p class="lead">Ecco in cosa posso aiutarti:</p>
+          <h2>Il mio metodo</h2>
+          <p>
+            Il <strong>coaching integrato</strong> è un approccio dialogico che si intreccia a tecniche energetiche come il Reiki, il massaggio energetico, la visualizzazione creativa.
+          </p>
+          <p>
+            Il suo scopo è di sostenere la persona da tutti i punti di vista mentale, emozionale, energetico-corporeo e spirituale.
+          </p>
+          <p>
+            In un breve ciclo di sedute il coachee acquista chiarezza, equilibrio emotivo, nuova percezione di sé e dei suoi obiettivi ed anche la forza e la determinazione necessari a raggiungerli per conquistare un miglior stato di benessere.
+          </p>
+          <p class="lead">
+            Ecco in cosa posso aiutarti:
+          </p>
 
           <div className="site-services">
             {data.allMarkdownRemark.edges.map(({node}) => (

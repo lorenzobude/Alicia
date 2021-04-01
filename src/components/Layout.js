@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 import Header from "./Header"
 import AboutCard from "./AboutCard"
 import BookCard from "./BookCard"
+import FlyerCard from "./FlyerCard"
 import Footer from "./Footer"
 
 import favicon from "../images/favicon.png"
@@ -27,7 +28,8 @@ export default function Layout({ children }) {
       
         <aside className="site-aside">
           <AboutCard />
-          <BookCard />          
+          <FlyerCard />
+          <BookCard />
         </aside>
       </div>
 
