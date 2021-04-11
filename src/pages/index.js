@@ -46,7 +46,7 @@ export default function Home({data}) {
             In un breve ciclo di sedute il coachee acquista chiarezza, equilibrio emotivo, nuova percezione di sé e dei suoi obiettivi ed anche la forza e la determinazione necessari a raggiungerli per conquistare un miglior stato di benessere.
           </p>
           <p class="lead">
-            Ecco in cosa posso aiutarti:
+            Ecco come posso aiutarti:
           </p>
 
           <div className="site-services">

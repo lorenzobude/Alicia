@@ -1,6 +1,6 @@
 ---
 type: Service
-navCaption: Masssaggio Energetico
+navCaption: Massaggio Energetico
 order: 4
 title: Masssaggio Energetico
 image: ../images/massaggio.jpg
